@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/11 19:51:26 by justin            #+#    #+#             */
-/*   Updated: 2022/06/18 15:24:07 by justin           ###   ########.fr       */
+/*   Created: 2022/06/17 23:05:02 by justin            #+#    #+#             */
+/*   Updated: 2022/06/17 23:33:22 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
-{
-	size_t i;
-	unsigned char *ptr;
+void    *ft_memset(void *s, int c, size_t n);
+size_t  ft_strlen(const char *s);
 
-	i = 0;
-	ptr = (unsigned char *)s;
-	while (i < n)
-	{
-		*ptr = (unsigned char)c;
-		i++;
-		ptr++;
-	}
-	return (s);
-}
+#endif
