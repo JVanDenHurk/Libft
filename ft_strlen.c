@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 18:37:37 by justin            #+#    #+#             */
-/*   Updated: 2022/06/17 23:33:29 by justin           ###   ########.fr       */
+/*   Updated: 2022/06/27 13:55:35 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,4 @@ size_t  ft_strlen(const char *s)
         i++;
     }
     return (i);
-}
-
-int main()
-{
-    printf("%ld\n", ft_strlen("hell"));
 }
