@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 23:05:02 by justin            #+#    #+#             */
-/*   Updated: 2022/06/27 11:48:29 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/06/27 20:19:01 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@
 
 void    *ft_memset(void *s, int c, int n);
 size_t  ft_strlen(const char *s);
-char	*ft_tolower(char *str);
+int	ft_tolower(int c)
 
 #endif

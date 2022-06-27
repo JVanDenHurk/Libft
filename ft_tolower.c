@@ -3,27 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/27 09:54:20 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/06/27 13:55:29 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/06/27 20:27:11 by justin            #+#    #+#             */
+/*   Updated: 2022/06/27 20:40:24 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_tolower(char *str)
+int ft_tolower(int c)
 {
-	int	i;
+    if(c >= 'A' && c <= 'Z')
+    {
+        c = c + 32;
+    }
+    return (c);
+}
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-			str[i] += 32;
-		}
-		i++;
-	}
-	return (str);
+int main()
+{
+    printf("%d\n", ft_tolower("TEST"));
 }
