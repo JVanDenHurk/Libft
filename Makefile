@@ -6,7 +6,7 @@
 #    By: justin <justin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/18 20:48:35 by justin            #+#    #+#              #
-#    Updated: 2022/06/29 19:01:01 by justin           ###   ########.fr        #
+#    Updated: 2022/06/29 19:20:10 by justin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,9 @@ CFLAGS = -Wall -Wextra -Werror -c
 
 SRCS		= 	ft_isalpha.c \
 				ft_isdigit.c \
+				ft_isalnum.c \
+				ft_isascii.c \
+				ft_isprint.c \
 				ft_memchr.c \
 				ft_memcmp.c \
 				ft_memset.c \
