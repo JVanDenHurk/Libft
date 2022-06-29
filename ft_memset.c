@@ -6,13 +6,13 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 19:51:26 by justin            #+#    #+#             */
-/*   Updated: 2022/06/28 19:30:01 by justin           ###   ########.fr       */
+/*   Updated: 2022/06/28 21:22:28 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t n)
 {
 
 	size_t i;
@@ -21,7 +21,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	str = (char *)b;
 	i = 0;
 
-	while (i < len)
+	while (i < n)
 	{
 		str[i] = c;
 		i++;
