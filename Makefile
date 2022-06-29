@@ -6,7 +6,7 @@
 #    By: justin <justin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/18 20:48:35 by justin            #+#    #+#              #
-#    Updated: 2022/06/29 19:20:10 by justin           ###   ########.fr        #
+#    Updated: 2022/06/29 19:51:49 by justin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,8 @@ SRCS		= 	ft_isalpha.c \
 				ft_isprint.c \
 				ft_memchr.c \
 				ft_memcmp.c \
+				ft_memcpy.c \
+				ft_memmov.c \
 				ft_memset.c \
 				ft_strlen.c \
 				ft_tolower.c \
