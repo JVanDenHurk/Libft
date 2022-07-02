@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 23:05:02 by justin            #+#    #+#             */
-/*   Updated: 2022/06/29 19:52:02 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/02 12:39:03 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ void	*ft_memset(void *b, int c, size_t n);
 size_t  ft_strlen(const char *s);
 int	    ft_tolower(int c);
 int     ft_toupper(int c);
+void ft_bzero(void *s, size_t n);
 
 #endif

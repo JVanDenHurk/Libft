@@ -6,7 +6,7 @@
 #    By: justin <justin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/18 20:48:35 by justin            #+#    #+#              #
-#    Updated: 2022/06/29 19:51:49 by justin           ###   ########.fr        #
+#    Updated: 2022/07/02 12:39:11 by justin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,8 @@ SRCS		= 	ft_isalpha.c \
 				ft_memset.c \
 				ft_strlen.c \
 				ft_tolower.c \
-				ft_toupper.c
+				ft_toupper.c \
+				fT_bzero.c
 				
 OBJS		=	$(SRCS:.c=.o)
 

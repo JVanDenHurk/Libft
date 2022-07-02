@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul  2 11:28:11 2022
+# Make data base, printed on Sat Jul  2 12:39:14 2022
 
 # Variables
 
@@ -67,7 +67,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # makefile (from 'Makefile', line 17)
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmov.c ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmov.c ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c fT_bzero.c
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -110,12 +110,13 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 31)
+# makefile (from 'Makefile', line 32)
 OBJS = $(SRCS:.c=.o)
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
 SHELL = /bin/sh
+ 
 # default
 MAKECMDGOALS := all
 # environment
@@ -221,6 +222,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
 # variable set hash-table stats:
+ 
 # Load=105/1024=10%, Rehash=0, Collisions=9/146=6%
 
 # Pattern-specific Variable Values
@@ -229,9 +231,9 @@ GDMSESSION = ubuntu
 
 # Directories
 
-# . (device 66307, inode 27534815): 19 files, no impossibilities.
+# . (device 66307, inode 27534815): 20 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -263,14 +265,14 @@ libft.a:
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=4/17=24%
-#  recipe to execute (from 'Makefile', line 36):
+#  recipe to execute (from 'Makefile', line 37):
 	$(CC) $(CFLAGS) $(SRCS)
 	ar rcs $(NAME) $(OBJS)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-29 19:51:49.904204102
+#  Last modified 2022-07-02 12:39:11.78945135
 #  File has been updated.
 #  Successfully updated.
 
@@ -279,7 +281,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 39):
+#  recipe to execute (from 'Makefile', line 40):
 	$(RM) $(OBJS)
 
 re: fclean all
@@ -296,7 +298,6 @@ re: fclean all
 
 all: libft.a
 #  Phony target (prerequisite of .PHONY).
- 
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -310,7 +311,7 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 41):
+#  recipe to execute (from 'Makefile', line 42):
 	$(RM) $(NAME)
 
 # Not a target:
@@ -332,12 +333,12 @@ fclean: clean
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 284 B / avg = 9 B
-# current buf: size = 8162 B / used = 284 B / count = 29 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 295 B / avg = 9 B
+# current buf: size = 8162 B / used = 295 B / count = 30 / avg = 9 B
 
-# strcache performance: lookups = 49 / hit rate = 40%
+# strcache performance: lookups = 50 / hit rate = 40%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=0/49=0%
-# Finished Make data base on Sat Jul  2 11:28:11 2022
+# Load=30/8192=0%, Rehash=0, Collisions=0/50=0%
+# Finished Make data base on Sat Jul  2 12:39:14 2022
 
  
