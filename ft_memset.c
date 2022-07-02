@@ -6,9 +6,11 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 19:51:26 by justin            #+#    #+#             */
-/*   Updated: 2022/06/29 19:24:34 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/02 11:52:20 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// sets int c amount of n into string
 
 #include "libft.h"
 

@@ -6,9 +6,11 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 19:16:39 by justin            #+#    #+#             */
-/*   Updated: 2022/06/29 19:19:31 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/02 11:52:34 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// returns printable characters from ascii table
 
 #include"libft.h"
 

@@ -6,9 +6,11 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 19:14:05 by justin            #+#    #+#             */
-/*   Updated: 2022/06/28 19:17:40 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/02 11:52:15 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// turns lowercase to uppercase
 
 #include "libft.h"
 

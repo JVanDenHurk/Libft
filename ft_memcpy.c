@@ -6,9 +6,11 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 19:33:52 by justin            #+#    #+#             */
-/*   Updated: 2022/06/29 19:48:23 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/02 11:52:45 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// copies memory of source to destination
 
 #include "libft.h"
 

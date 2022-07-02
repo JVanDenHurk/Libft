@@ -6,9 +6,11 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:10:47 by justin            #+#    #+#             */
-/*   Updated: 2022/06/29 18:18:21 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/02 11:43:00 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// returns alphabet from the ascii table.
 
 #include "libft.h"
 

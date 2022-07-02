@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 18:37:37 by justin            #+#    #+#             */
-/*   Updated: 2022/06/27 13:55:35 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/02 11:51:10 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// returns string length
 
 #include "libft.h"
 
