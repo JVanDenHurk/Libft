@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 23:05:02 by justin            #+#    #+#             */
-/*   Updated: 2022/07/05 18:40:13 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/05 18:53:46 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
 size_t  ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);
+int     ft_atoi(const char *str);
 
 #endif
