@@ -1,2 +1,0 @@
-stack smashing
-ft_strlcat.c

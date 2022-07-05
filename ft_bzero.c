@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 12:28:52 by justin            #+#    #+#             */
-/*   Updated: 2022/07/02 12:52:22 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/05 18:39:56 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,4 @@ void ft_bzero(void *s, size_t n)
         i++;
     }
     return ;
-}
-
-int main()
-{
-    char test[] = "test";
-    
-    printf("Before: %s\n", test);
-    ft_bzero(test, 4);
-    printf("After: %s\n", test);
 }
