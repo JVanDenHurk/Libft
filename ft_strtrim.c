@@ -6,7 +6,7 @@
 /*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 10:39:13 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/07/08 15:14:49 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/08 15:21:11 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char *ft_strtrim(char const *s1, char const *set)
     }
     return (result);
 }
+
 int main()
 {
 	printf("%s\n", ft_strtrim("abqbc", "abc"));
