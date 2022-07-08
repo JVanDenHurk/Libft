@@ -6,7 +6,7 @@
 /*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 09:27:29 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/07/08 09:43:25 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/08 14:48:25 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,4 @@ char *ft_substr(char  *s, unsigned int start, size_t len)
     }
     str[i2] = 0;
     return(str);
-}
-
-int main()
-{
-    char str[16] = "This is a string";
-
-    char *strret = ft_substr(str, 5, 2);
-
-    printf("%s\n", strret);
 }
