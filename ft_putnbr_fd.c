@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/03 13:53:59 by justin            #+#    #+#             */
-/*   Updated: 2022/07/11 18:11:36 by justin           ###   ########.fr       */
+/*   Created: 2022/07/11 19:40:55 by justin            #+#    #+#             */
+/*   Updated: 2022/07/11 20:41:36 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// searches string through string and returns matching character. returns NULL if no matching string.
-
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+void ft_putnbr_fd(int n, int fd)
 {
-    int i;
-    
-    i = 0;
-    
-    while(i <= c)
-    {
-        if(s[i] == (char)c)
-            return((char *)&s[i]);
-        i++;
-    }
-    return (NULL);
+	if (n == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", 1);
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', 1);
+		n = -n;
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, 1);
+	}
+    ft_putchar_fd(n % 10 + '0', 1);
 }

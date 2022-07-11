@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+         #
+#    By: justin <justin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/18 20:48:35 by justin            #+#    #+#              #
-#    Updated: 2022/07/08 14:50:56 by jvan-den         ###   ########.fr        #
+#    Updated: 2022/07/11 20:11:26 by justin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,8 +36,11 @@ SRCS		= 	ft_isalpha.c \
 				ft_strlcpy.c \
 				ft_atoi.c	\
 				ft_strdup.c \
-				ft_strtrim.c \
-				ft_substr.c
+				ft_substr.c \
+				ft_putchar_fd.c \
+				ft_putstr_fd.c \
+				ft_putnbr_fd.c \
+				ft_putendl_fd.c
 				
 OBJS		=	$(SRCS:.c=.o)
 

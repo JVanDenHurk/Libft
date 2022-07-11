@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/03 13:53:59 by justin            #+#    #+#             */
-/*   Updated: 2022/07/11 18:11:36 by justin           ###   ########.fr       */
+/*   Created: 2022/07/11 19:34:34 by justin            #+#    #+#             */
+/*   Updated: 2022/07/11 19:43:31 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// searches string through string and returns matching character. returns NULL if no matching string.
+//put string with file descriptor
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-    int i;
-    
-    i = 0;
-    
-    while(i <= c)
-    {
-        if(s[i] == (char)c)
-            return((char *)&s[i]);
-        i++;
-    }
-    return (NULL);
+	int	i;
+	
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }
