@@ -10,34 +10,34 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//converts string into int unless it's a number, space, '+' or '-' then it will return 0.
+//converts string into int unless it's a number,
+// space, '+' or '-' then it will return 0.
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-    int r;
-    int n;
-    int i;
+	int	r;
+	int	n;
+	int	i;
 
-    r = 0;
-    n = 0;
-    i = 0;
-
-    while ((str[i] == ' ' || str[i] >= 0) && (str[i] <= 13))
-        i++;
-    if (str[i] == '-' || str[i] == '+')
-    {
-        if(str[i] == '-')
-            n = 1;
-        i++;
-    }
-    while (ft_isdigit(str[i]))
-    {
-        r = r * 10 + (str[i] - '0');
-        i++;
-    }
-    if (n)
-        return(-r);
-    return (r);
+	r = 0;
+	n = 0;
+	i = 0;
+	while ((str[i] == ' ' || str[i] >= 0) && (str[i] <= 13))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			n = 1;
+		i++;
+	}
+	while (ft_isdigit(str[i]))
+	{
+		r = r * 10 + (str[i] - '0');
+		i++;
+	}
+	if (n)
+		return (-r);
+	return (r);
 }

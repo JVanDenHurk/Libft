@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 20:11:37 2022
+# Make data base, printed on Sun Jul 17 17:47:34 2022
 
 # Variables
 
@@ -20,6 +20,8 @@ GNOME_SHELL_SESSION_MODE = pop
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
+# environment
+MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
 VSCODE_CWD = /home/justin
 # environment
@@ -35,7 +37,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/justin/Libft
+PWD = /home/justin/Documents/GitHub/Libft
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -61,7 +63,7 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/justin/Libft
+CURDIR := /home/justin/Documents/GitHub/Libft
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # makefile (from 'Makefile', line 17)
@@ -87,13 +89,13 @@ MAKEFILE_LIST := Makefile
 # environment
 ZSH = /home/justin/.oh-my-zsh
 # environment
-VSCODE_PID = 19821
+VSCODE_PID = 5738
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/1618,unix/pop-os:/tmp/.ICE-unix/1618
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/1554,unix/pop-os:/tmp/.ICE-unix/1554
 # automatic
 *F = $(notdir $*)
 # environment
@@ -125,13 +127,13 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/justin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # default
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = c01cdc69735044fdad0db1e49af165bb
+INVOCATION_ID = 89e2444f832f46cdb9caaa151611c391
 # environment
 USERNAME = justin
 # automatic
@@ -161,19 +163,21 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1638
+SYSTEMD_EXEC_PID = 1573
 # environment
 DISPLAY = :0
 # environment
 USER = justin
 # environment
 GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
+# environment
+DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1324
+MANAGERPID = 1213
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 19821
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5738
 # environment
 PAGER = less
 # environment
@@ -185,7 +189,7 @@ CFLAGS = -Wall -Wextra -Werror -c
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:38158
+JOURNAL_STREAM = 8:35135
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -213,7 +217,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=6/142=4%
+# Load=103/1024=10%, Rehash=0, Collisions=7/144=5%
 
 # Pattern-specific Variable Values
 
@@ -221,9 +225,9 @@ GDMSESSION = pop
 
 # Directories
 
-# . (device 64769, inode 48366022): 45 files, no impossibilities.
+# . (device 64769, inode 49283674): 40 files, no impossibilities.
 
-# 45 files, no impossibilities in 1 directories.
+# 40 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -262,7 +266,7 @@ libft.a:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-11 20:11:26.579979913
+#  Last modified 2022-07-17 16:46:29.775405803
 #  File has been updated.
 #  Successfully updated.
 
@@ -304,6 +308,7 @@ fclean: clean
 #  recipe to execute (from 'Makefile', line 55):
 	$(RM) $(NAME)
 
+ 
 # Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
@@ -323,13 +328,12 @@ fclean: clean
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 55 / storage = 637 B / avg = 11 B
-# current buf: size = 8162 B / used = 637 B / count = 55 / avg = 11 B
- 
+# strcache buffers: 1 (0) / strings = 50 / storage = 576 B / avg = 11 B
+# current buf: size = 8162 B / used = 576 B / count = 50 / avg = 11 B
 
-# strcache performance: lookups = 75 / hit rate = 26%
+# strcache performance: lookups = 70 / hit rate = 28%
 # hash-table stats:
-# Load=55/8192=1%, Rehash=0, Collisions=0/75=0%
-# Finished Make data base on Mon Jul 11 20:11:37 2022
+# Load=50/8192=1%, Rehash=0, Collisions=0/70=0%
+# Finished Make data base on Sun Jul 17 17:47:34 2022
 
  
