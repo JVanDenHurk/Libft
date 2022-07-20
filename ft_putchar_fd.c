@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 19:18:12 by justin            #+#    #+#             */
-/*   Updated: 2022/07/11 19:32:58 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/20 10:33:43 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

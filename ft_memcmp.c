@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 21:08:00 by justin            #+#    #+#             */
-/*   Updated: 2022/07/02 11:52:28 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/20 10:15:33 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t				i;
 	const unsigned char	*strs1;
 	const unsigned char	*strs2;
 

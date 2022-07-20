@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 19:14:05 by justin            #+#    #+#             */
-/*   Updated: 2022/07/02 11:52:15 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/20 11:30:46 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-        c = c + 32;
-    return (c);
+	if (c >= 'a' && c <= 'z')
+		c = c + 32;
+	return (c);
 }

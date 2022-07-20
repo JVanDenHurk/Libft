@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jvan-den <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/11 18:37:37 by justin            #+#    #+#             */
-/*   Updated: 2022/07/20 10:58:27 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/07/13 10:56:51 by jvan-den          #+#    #+#             */
+/*   Updated: 2022/07/20 10:38:28 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// returns string length
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+static size_t	ft_word_count(char const *s, char delim)
 {
-	size_t	i;
+	size_t i;
+	size_t count;
 
 	i = 0;
-	while (s[i] != '\0')
+	count = 0;
+	while (s[i] != delim)
 	{
+		if (s[i] == delim)
+		{
+			count++;
+		}
 		i++;
 	}
-	return (i);
+	return(count);
+}
+
+char	**ft_split(char const *s, char c)
+{
+
 }

@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 19:51:26 by justin            #+#    #+#             */
-/*   Updated: 2022/07/02 11:52:20 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/20 10:32:01 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,11 @@
 
 void	*ft_memset(void *b, int c, size_t n)
 {
-	size_t i;
-	char *str;
+	size_t	i;
+	char	*str;
 
 	str = (char *)b;
 	i = 0;
-
 	while (i < n)
 	{
 		str[i] = c;

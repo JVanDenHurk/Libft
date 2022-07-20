@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 20:27:11 by justin            #+#    #+#             */
-/*   Updated: 2022/07/02 11:52:16 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/20 11:30:11 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 #include "libft.h"
 
-int ft_tolower(int c)
-{    
-    if(c >= 'A' && c <= 'Z')
-        c = c + 32;
-    return (c);
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		c = c + 32;
+	return (c);
 }
