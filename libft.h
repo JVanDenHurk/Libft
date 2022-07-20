@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 23:05:02 by justin            #+#    #+#             */
-/*   Updated: 2022/07/20 11:37:45 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/20 12:21:38 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif

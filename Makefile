@@ -6,13 +6,14 @@
 #    By: justin <justin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/18 20:48:35 by justin            #+#    #+#              #
-#    Updated: 2022/07/11 20:11:26 by justin           ###   ########.fr        #
+#    Updated: 2022/07/20 14:52:16 by jvan-den         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= 	libft.a
 CC 			=	gcc
 CFLAGS = -Wall -Wextra -Werror -c
+RM = rm -f
 
 SRCS		= 	ft_isalpha.c \
 				ft_isdigit.c \
@@ -40,7 +41,8 @@ SRCS		= 	ft_isalpha.c \
 				ft_putchar_fd.c \
 				ft_putstr_fd.c \
 				ft_putnbr_fd.c \
-				ft_putendl_fd.c
+				ft_putendl_fd.c \
+				ft_calloc.c
 				
 OBJS		=	$(SRCS:.c=.o)
 
