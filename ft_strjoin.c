@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 09:46:23 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/07/20 10:52:18 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/21 21:12:19 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,29 @@
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
-	char	*str;
-	size_t	i;
-	size_t	i2;
+	unsigned int	i;
+	char			*result;
+	unsigned int	s1_len;
+	unsigned int	s2_len;
 
-	str = (char *)malloc(sizeof((*s1) * (ft_strlen(s1) + ft_strlen(s2))));
-	if (!str)
+	i = 0;
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	result = (char *)malloc(sizeof(char) * s1_len + s2_len + 1);
+	if (result == NULL)
 		return (NULL);
-	i = 0;
-	i2 = 0;
-	while (s1[i])
+	while (i < s1_len)
 	{
-		str[i2] = s1[i];
+		result[i] = s1[i];
 		i++;
-		i2++;
 	}
-	i = 0;
-	while (s2[i])
+	while (i < s2_len + s1_len)
 	{
-		str[i2] = s2[i];
+		result[i] = s2[i - s1_len];
 		i++;
-		i2++;
 	}
-	str[i2] = 0;
-	return (str);
+	result[i] = '\0';
+	return (result);
 }

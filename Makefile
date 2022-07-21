@@ -6,7 +6,7 @@
 #    By: justin <justin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/18 20:48:35 by justin            #+#    #+#              #
-#    Updated: 2022/07/20 14:52:16 by jvan-den         ###   ########.fr        #
+#    Updated: 2022/07/21 21:39:45 by justin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS		= 	ft_isalpha.c \
 				ft_memchr.c \
 				ft_memcmp.c \
 				ft_memcpy.c \
-				ft_memmov.c \
+				ft_memmove.c \
 				ft_memset.c \
 				ft_strlen.c \
 				ft_tolower.c \
@@ -35,6 +35,7 @@ SRCS		= 	ft_isalpha.c \
 				ft_strrchr.c \
 				ft_strlcat.c \
 				ft_strlcpy.c \
+				ft_strjoin.c \
 				ft_atoi.c	\
 				ft_strdup.c \
 				ft_substr.c \
@@ -42,7 +43,12 @@ SRCS		= 	ft_isalpha.c \
 				ft_putstr_fd.c \
 				ft_putnbr_fd.c \
 				ft_putendl_fd.c \
-				ft_calloc.c
+				ft_calloc.c	\
+				ft_split.c \
+				ft_strtrim.c \
+				ft_strmapi.c \
+				ft_striteri.c \
+				ft_itoa.c \
 				
 OBJS		=	$(SRCS:.c=.o)
 

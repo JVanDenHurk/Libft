@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 17 17:47:34 2022
+# Make data base, printed on Thu Jul 21 21:40:01 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/justin/Documents/GitHub/Libft
+PWD = /home/justin/Libft
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -63,11 +63,11 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/justin/Documents/GitHub/Libft
+CURDIR := /home/justin/Libft
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from 'Makefile', line 17)
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmov.c ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c ft_bzero.c ft_strnstr.c ft_strncmp.c ft_strchr.c ft_strrchr.c ft_strlcat.c ft_strlcpy.c ft_atoi.c ft_strdup.c ft_substr.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c ft_putendl_fd.c
+# makefile (from 'Makefile', line 18)
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c ft_bzero.c ft_strnstr.c ft_strncmp.c ft_strchr.c ft_strrchr.c ft_strlcat.c ft_strlcpy.c ft_strjoin.c ft_atoi.c ft_strdup.c ft_substr.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c ft_putendl_fd.c ft_calloc.c ft_split.c ft_strtrim.c ft_strmapi.c ft_striteri.c ft_itoa.c 
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -89,13 +89,13 @@ MAKEFILE_LIST := Makefile
 # environment
 ZSH = /home/justin/.oh-my-zsh
 # environment
-VSCODE_PID = 5738
+VSCODE_PID = 225853
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/1554,unix/pop-os:/tmp/.ICE-unix/1554
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/7182,unix/pop-os:/tmp/.ICE-unix/7182
 # automatic
 *F = $(notdir $*)
 # environment
@@ -108,7 +108,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 45)
+# makefile (from 'Makefile', line 53)
 OBJS = $(SRCS:.c=.o)
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
@@ -133,7 +133,7 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 89e2444f832f46cdb9caaa151611c391
+INVOCATION_ID = a4a3dce957d64448a1a0fb1e219d0440
 # environment
 USERNAME = justin
 # automatic
@@ -163,9 +163,11 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1573
+SYSTEMD_EXEC_PID = 7203
+# makefile (from 'Makefile', line 16)
+RM = rm -f
 # environment
-DISPLAY = :0
+DISPLAY = :1
 # environment
 USER = justin
 # environment
@@ -175,9 +177,9 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1213
+MANAGERPID = 6930
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5738
+GIO_LAUNCHED_DESKTOP_FILE_PID = 225853
 # environment
 PAGER = less
 # environment
@@ -189,7 +191,7 @@ CFLAGS = -Wall -Wextra -Werror -c
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:35135
+JOURNAL_STREAM = 8:59368
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -217,7 +219,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=103/1024=10%, Rehash=0, Collisions=7/144=5%
+# Load=104/1024=10%, Rehash=0, Collisions=8/145=6%
 
 # Pattern-specific Variable Values
 
@@ -225,7 +227,7 @@ GDMSESSION = pop
 
 # Directories
 
-# . (device 64769, inode 49283674): 40 files, no impossibilities.
+# . (device 64769, inode 48368946): 40 files, no impossibilities.
 
 # 40 files, no impossibilities in 1 directories.
 
@@ -259,14 +261,14 @@ libft.a:
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=4/17=24%
-#  recipe to execute (from 'Makefile', line 50):
+#  recipe to execute (from 'Makefile', line 58):
 	$(CC) $(CFLAGS) $(SRCS)
 	ar rcs $(NAME) $(OBJS)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-17 16:46:29.775405803
+#  Last modified 2022-07-21 21:39:45.532885808
 #  File has been updated.
 #  Successfully updated.
 
@@ -275,7 +277,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 53):
+#  recipe to execute (from 'Makefile', line 61):
 	$(RM) $(OBJS)
 
 re: fclean all
@@ -290,6 +292,7 @@ re: fclean all
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 all: libft.a
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
@@ -305,10 +308,9 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 55):
+#  recipe to execute (from 'Makefile', line 63):
 	$(RM) $(NAME)
 
- 
 # Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
@@ -328,12 +330,12 @@ fclean: clean
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 50 / storage = 576 B / avg = 11 B
-# current buf: size = 8162 B / used = 576 B / count = 50 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 50 / storage = 555 B / avg = 11 B
+# current buf: size = 8162 B / used = 555 B / count = 50 / avg = 11 B
 
 # strcache performance: lookups = 70 / hit rate = 28%
 # hash-table stats:
 # Load=50/8192=1%, Rehash=0, Collisions=0/70=0%
-# Finished Make data base on Sun Jul 17 17:47:34 2022
+# Finished Make data base on Thu Jul 21 21:40:01 2022
 
  

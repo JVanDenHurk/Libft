@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 11:44:59 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/07/20 15:53:56 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/21 21:36:58 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ static size_t	num_words(char const *s, char delim)
 			tru = 0;
 			count++;
 		}
-		else if(!tru && s[i] == delim)
+		else if (!tru && s[i] == delim)
 			tru = 1;
 		i++;
 	}
 	return (count);
 }
 
-static char	*fillstring(char const **ss, char c)
+static char	*fillstring(char const**ss, char c)
 {
 	char	*str;
 	size_t	i;
@@ -45,9 +45,9 @@ static char	*fillstring(char const **ss, char c)
 		(*ss)++;
 	while ((*ss)[i] && (*ss)[i] != c)
 		i++;
-	str = ft_calloc(i, sizeof (char));
+	str = ft_calloc(i + 1, sizeof(char));
 	if (!str)
-		return(NULL);
+		return (NULL);
 	ft_memcpy(str, *ss, i);
 	*ss += i;
 	return (str);
@@ -56,14 +56,14 @@ static char	*fillstring(char const **ss, char c)
 char	**ft_split(char const *s, char c)
 {
 	char			**strings;
-	unsigned char	count;
+	unsigned int	count;
 	size_t			i;
 
 	i = 0;
-	if(!s)
+	if (!s)
 		return (NULL);
 	count = num_words(s, c);
-	strings = ft_calloc(count, sizeof (char *));
+	strings = ft_calloc(count + 1, sizeof(char *));
 	if (!strings)
 		return (strings);
 	while (i < count)
@@ -75,16 +75,4 @@ char	**ft_split(char const *s, char c)
 	}
 	strings[i] = NULL;
 	return (strings);
-}
-
-int main()
-{
-	char s[5][6] = {"test","this","string"};
-	char c = ',';
-	
-	printf("Before: %s\n", s);
-	
-	ft_split(s, c);
-
-	printf("After: %s\n", s);
 }

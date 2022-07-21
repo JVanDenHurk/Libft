@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   help_ft_strtrim.c                                  :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 10:39:13 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/07/11 19:02:27 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/21 21:41:30 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,4 @@ char	*ft_strtrim(const char *s1, const char *set)
 		result [i++] = s1[front++];
 	result[i] = '\0';
 	return (&result[0]);
-}
-int main()
-{
-	printf("%s\n", ft_strtrim("abqbc", "abc"));
-	printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
-	return 0;
 }

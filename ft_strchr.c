@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// searches string through string and returns matching character. 
+// searches through string and returns matching character. 
 // returns NULL if no matching string.
 
 #include "libft.h"
@@ -18,9 +18,11 @@
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;
-
+	int 	len;
+	
+	len = ft_strlen(s);
 	i = 0;
-	while (i <= c)
+	while (i <= len)
 	{
 		if (s[i] == (char)c)
 			return ((char *)&s[i]);
