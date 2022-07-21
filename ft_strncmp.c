@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 12:23:52 by justin            #+#    #+#             */
-/*   Updated: 2022/07/20 11:18:13 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/21 21:51:56 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		i++;
 	}
-	if(i < n)
+	if (i < n)
 	{
 		return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 	}

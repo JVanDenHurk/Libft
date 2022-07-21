@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 23:05:02 by justin            #+#    #+#             */
-/*   Updated: 2022/07/21 21:40:01 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/21 21:49:00 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,5 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strtrim(const char *s1, const char *set);
-
 
 #endif

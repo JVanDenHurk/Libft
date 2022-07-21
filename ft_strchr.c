@@ -6,7 +6,7 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 13:53:59 by justin            #+#    #+#             */
-/*   Updated: 2022/07/20 10:40:58 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/21 21:52:58 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;
-	int 	len;
-	
+	int	len;
+
 	len = ft_strlen(s);
 	i = 0;
 	while (i <= len)
