@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
+//splits string from delimiters
 #include "libft.h"
 
 static size_t	num_words(char const *s, char delim)
