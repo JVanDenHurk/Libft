@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// applies the function 'f' to each character of the string s, and makes a new string
+// (with malloc) made from the outputs of each successive application of f to the old string. 
+
 #include "libft.h"
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
