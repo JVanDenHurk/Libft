@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//takes a string, iterates through it, and applies the function f to each character 
+// within that string.
+
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
