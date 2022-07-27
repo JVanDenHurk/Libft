@@ -20,6 +20,8 @@ static int	countdigits(long int n)
 	unsigned int	count;
 
 	count = 0;
+	if (n = 0)
+		n = 1;
 	if (n < 0)
 	{
 		count++;
