@@ -10,15 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//converts int into ascii
+
 #include "libft.h"
 
+//counts the digits in the int number
 static int	countdigits(long int n)
 {
 	unsigned int	count;
 
 	count = 0;
-	if (n == 0)
-		return (1);
 	if (n < 0)
 	{
 		count++;
