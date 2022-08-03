@@ -6,11 +6,11 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 20:11:27 by justin            #+#    #+#             */
-/*   Updated: 2022/07/20 12:21:43 by jvan-den         ###   ########.fr       */
+/*   Updated: 2022/07/27 15:51:33 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Allocates to heap memory and returns a pointer. 
+// Allocates to heap memory and returns a pointer. 
 // fills pointer with zeros.
 
 #include "libft.h"

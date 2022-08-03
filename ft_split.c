@@ -6,10 +6,9 @@
 /*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 11:44:59 by jvan-den          #+#    #+#             */
-/*   Updated: 2022/07/21 21:49:28 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/27 16:18:00 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 //splits string from delimiters
 #include "libft.h"

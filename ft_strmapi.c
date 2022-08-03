@@ -6,12 +6,14 @@
 /*   By: justin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 21:50:48 by justin            #+#    #+#             */
-/*   Updated: 2022/07/21 21:51:03 by justin           ###   ########.fr       */
+/*   Updated: 2022/07/27 16:19:33 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// applies the function 'f' to each character of the string s, and makes a new string
-// (with malloc) made from the outputs of each successive application of f to the old string. 
+// applies the function 'f' to each character 
+// of the string s, and makes a new string
+// (with malloc) made from the outputs of each 
+// successive application of f to the old string. 
 
 #include "libft.h"
 
