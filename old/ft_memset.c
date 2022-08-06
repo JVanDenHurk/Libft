@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 19:33:52 by justin            #+#    #+#             */
-/*   Updated: 2022/08/03 14:48:21 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/06/11 19:51:26 by justin            #+#    #+#             */
+/*   Updated: 2022/07/20 10:32:01 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// copies memory of source to destination
+// sets int c amount of n into string
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memset(void *b, int c, size_t n)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	size_t				i;
+	size_t	i;
+	char	*str;
 
-	if (dst == NULL && src == NULL)
-		return (NULL);
-	d = dst;
-	s = src;
+	str = (char *)b;
 	i = 0;
 	while (i < n)
 	{
-		d[i] = s[i];
+		str[i] = c;
 		i++;
 	}
-	return (dst);
+	return (b);
 }

@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/28 20:35:44 by justin            #+#    #+#             */
-/*   Updated: 2022/08/03 14:50:28 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/07/03 12:23:52 by justin            #+#    #+#             */
+/*   Updated: 2022/07/21 21:51:56 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//searches through string to find character c
-//memchr can search past null character because it accepts the lenght
+// comapres the strings returns the difference between the 
+// two on the ascii table. otherwise reutrn 0;
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	const char	*str;
-	size_t		i;
+	size_t	i;
 
-	str = (const char *)s;
 	i = 0;
-	while (i < n)
+	while (s1[i] && s2[i] == s1[i])
 	{
-		if (str[i] == (char)c)
-			return ((void *)(s + i));
 		i++;
+	}
+	if (i < n)
+	{
+		return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 	}
 	return (0);
 }

@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 19:33:52 by justin            #+#    #+#             */
-/*   Updated: 2022/08/03 14:48:21 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/07/03 13:53:59 by justin            #+#    #+#             */
+/*   Updated: 2022/07/21 21:52:58 by justin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// copies memory of source to destination
+// searches through string and returns matching character. 
+// returns NULL if no matching string.
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	size_t				i;
+	int	i;
+	int	len;
 
-	if (dst == NULL && src == NULL)
-		return (NULL);
-	d = dst;
-	s = src;
+	len = ft_strlen(s);
 	i = 0;
-	while (i < n)
+	while (i <= len)
 	{
-		d[i] = s[i];
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
 		i++;
 	}
-	return (dst);
+	return (NULL);
 }

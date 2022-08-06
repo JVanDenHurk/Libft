@@ -1,34 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
+/*   By: justin <justin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 19:33:52 by justin            #+#    #+#             */
-/*   Updated: 2022/08/03 14:48:21 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/07/02 12:28:52 by justin            #+#    #+#             */
+/*   Updated: 2022/07/27 12:04:13 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// copies memory of source to destination
+// fills a pointer with zeros
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	size_t				i;
+	unsigned char	*d;
+	size_t			i;
 
-	if (dst == NULL && src == NULL)
-		return (NULL);
-	d = dst;
-	s = src;
+	d = s;
 	i = 0;
 	while (i < n)
 	{
-		d[i] = s[i];
+		d[i] = 0;
 		i++;
 	}
-	return (dst);
+	return ;
 }
+/*
+int main()
+{
+	int n = 1;
+	int *p;
+	
+	p = &n;
+
+	printf("Before bzero: %d\n", n);
+
+	ft_bzero(p, n);
+
+	printf("After bzero: %d\n", n);
+}
+*/

@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jvan-den <jvan-den@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 19:33:52 by justin            #+#    #+#             */
-/*   Updated: 2022/08/03 14:48:21 by jvan-den         ###   ########.fr       */
+/*   Created: 2022/07/08 09:27:29 by jvan-den          #+#    #+#             */
+/*   Updated: 2022/07/20 11:29:21 by jvan-den         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// copies memory of source to destination
-
+//returns string from starting positon and length of string
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_substr(char *s, unsigned int start, size_t len)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	size_t				i;
+	size_t	i;
+	size_t	i2;
+	char	*str;
 
-	if (dst == NULL && src == NULL)
+	str = (char *)malloc(sizeof (*s) * (len + 1));
+	if (!str)
 		return (NULL);
-	d = dst;
-	s = src;
 	i = 0;
-	while (i < n)
+	i2 = 0;
+	while (s[i])
 	{
-		d[i] = s[i];
+		if (i >= start && i2 < len)
+		{
+			str[i2] = s[i];
+			i2++;
+		}
 		i++;
 	}
-	return (dst);
+	str[i2] = 0;
+	return (str);
 }
