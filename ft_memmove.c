@@ -14,6 +14,13 @@
 
 #include "libft.h"
 
+void	*check_null(unsigned char *f, const unsigned char *s)
+{
+	if (f == NULL && s == NULL)
+		return (NULL);
+	return (0);
+}
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*d;
@@ -22,9 +29,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = dst;
 	s = src;
+	i = 0;
+	check_null(d, s);
 	if (d < s)
 	{
-		i = 0;
 		while (i < len)
 		{
 			d[i] = s[i];
@@ -33,11 +41,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	else
 	{
-		i = len;
-		while (i > 0)
-		{
-			d[i - 1] = s[i - 1];
-			i--;
+		while (len-- > i)
+		{	
+			d[len] = s[len];
 		}
 	}
 	return (dst);
